@@ -1,19 +1,19 @@
 basic.forever(function () {
-    if (input.rotation(Rotation.Pitch) < -10) {
+    if (input.rotation(Rotation.Roll) < -10) {
         basic.showLeds(`
-            # # # # #
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
+            # . . . .
+            # . . . .
+            # . . . .
+            # . . . .
+            # . . . .
             `)
-    } else if (input.rotation(Rotation.Pitch) > 10) {
+    } else if (input.rotation(Rotation.Roll) > 10) {
         basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            # # # # #
+            . . . . #
+            . . . . #
+            . . . . #
+            . . . . #
+            . . . . #
             `)
     } else {
         basic.clearScreen()
