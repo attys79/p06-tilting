@@ -1,7 +1,7 @@
 let control2 = 0
 for (let x = 0; x <= 4; x++) {
-    led.plotBrightness(x, 1, 127)
-    led.plotBrightness(x, 3, 127)
+    led.plotBrightness(x, 1, 7)
+    led.plotBrightness(x, 3, 7)
 }
 let x = 2
 basic.forever(function () {
